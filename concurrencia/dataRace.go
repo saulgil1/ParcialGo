@@ -1,10 +1,11 @@
 package concurrencia
 
 import (
-	"comparativosConcurrencia/calculadora"
 	"fmt"
 	"sync"
 	"time"
+
+	"github.com/saulgil1/ParcialGo/calculadora"
 )
 
 func SingleThreaded(coleccionOperaciones []calculadora.Operacion) {

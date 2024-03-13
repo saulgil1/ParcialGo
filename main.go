@@ -1,9 +1,11 @@
 package main
 
 import (
-	"comparativosConcurrencia/gestorArchivos"
 	"fmt"
 	"io/ioutil"
+
+	"github.com/saulgil1/ParcialGo/concurrencia"
+	"github.com/saulgil1/ParcialGo/gestorArchivos"
 )
 
 func main() {
@@ -38,10 +40,8 @@ func main() {
 		fmt.Println("-> Ejecutando versión de un solo hilo para el archivo:", nombreArchivo)
 		coleccionOperaciones := gestorArchivos.CargarArchivo(rutaArchivo)
 
-		/*
-			// Versión SingleThreaded
-			concurrencia.SingleThreaded(coleccionOperaciones)
-		*/
+		// Versión SingleThreaded
+		concurrencia.SingleThreaded(coleccionOperaciones)
 
 		/*
 			///Versión MultiThreaded - Data Race Una Variable

@@ -1,3 +1,3 @@
-module comparativosConcurrencia
+module github.com/saulgil1/ParcialGo
 
-go 1.20
+go 1.21.6
